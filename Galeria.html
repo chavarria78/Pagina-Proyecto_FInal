@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="Css/Estilos.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galeria</title>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+ }
+
+* {
+  box-sizing: border-box;
+ 
+  
+}
+
+/* Header/logo Titulo */
+.header {
+  padding: 90px;
+  height: 50px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+
+}
+
+/* Aumenta el tamaño de fuente */
+.header h1 {
+  font-size: 40px;
+}
+
+.st {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fila {
+
+  display: grid;
+}
+
+.container {
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    background-color: #4d4b4a;
+}
+.box {
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+    line-height: 0;
+    transition: all 400ms;
+}
+.box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+.box > span {
+    font-size: 20px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 100%;
+    line-height: 2.6;
+    color: black;
+    background-color: #14B76E;
+}
+.box:hover {
+    flex: 15%;
+}
+.box:hover > img {
+    width: 100%;
+    height: 80%;
+}
+
+/* Footer */
+.footer {
+  padding: 15px;
+  text-align: center;
+  background: #4d4b4a;
+  overflow: hidden;
+  border-style: groove none none;
+  border-color: white;
+}
+
+.footer p {
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+  <h1>Diseños</h1>
+</div>
+
+ <div id="N">
+        <a href="Inicio.html">Inicio</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="Tutoriales.html">Tutoriales</a>
+                
+    </div>
+
+   <div class="fila">
+     
+     <div class="container">
+        <div class="box">
+           <img src="Galeria/tf.png">
+            <span><a href="Tutoriales.html">TEXTO DE FUEGO</a></span>
+        </div>
+
+        <div class="box">
+            <img src="Galeria/Portada.png">
+            <span><a href="Tutoriales/portada.html">Fusion de imagenes</a></span>
+        </div>
+
+        <div class="box">
+            <img src="Galeria/colorc.png">
+            <span><a href="Tutoriales/color.html">Cambiar color de cabello</a></span>
+        </div>
+
+        <div class="box">
+            <img src="Galeria/Marco.png">
+            <span><a href="Tutoriales/marco.html">Marco glaseado tipo marconeo</a></span>
+        </div>
+
+        
+    </div>
+    <div class="container">
+
+        <div class="box">
+            <img src="Galeria/Luz.png">
+            <span><a href="Tutoriales/luz.html">Efecto de luz en texto</a></span>
+        </div>
+
+        <div class="box">
+            <img src="Galeria/Matrix.png">
+            <span><a href="Tutoriales/matrix.html">Efecto matrix</a></span>
+        </div>
+        
+        <div class="box">
+           <img src="Galeria/Fondo.png" >
+            <span><a href="Tutoriales/fondo.html">ELiminar fondo</a></span>
+        </div>
+
+        <div class="box">
+           <img src="Galeria/impreso.png">
+            <span><a href="Tutoriales/impreso.html">Aspecto impreso</a></span>
+        </div>
+
+        
+
+        
+    </div>
+    <div class="container">
+
+
+        <div class="box">
+           <img src="Galeria/Estampado.png">
+            <span><a href="Tutoriales/estampado.html">Estampado en ropa</a></span>
+        </div>
+
+        <div class="box">
+            <img src="Galeria/Reflejo.png">
+            <span><a href="Tutoriales/ojo.html">Reflejo de imagen en ojo</a></span>
+        </div>
+
+      <div class="box">
+            <img src="Galeria/Full.png">
+            <span><a href="Tutoriales/full.html">Texto color full</a></span>
+        </div>
+
+        <div class="box">
+            <img src="Galeria/avatar.png">
+            <span><a href="Tutoriales/avatar.html">Avatar con efecto cristal y marco semi-metalico</a></span>
+        </div>
+        <div class="box">
+           <img src="Galeria/caja.png">
+            <span><a href="Tutoriales/caja.html">Efecto caja</a></span>
+        </div>
+
+   </div>
+
+   <div class="footer">
+  
+  <p>&copy; 2021 Brandom Chavarria</p>
+
+</div>
+<script>
+
+  window.onscroll = function() {myFunction()};
+
+  var N = document.getElementById("N");
+  var st = N.offsetTop;
+
+  function myFunction() {
+      if (window.pageYOffset >= st) {
+        N.classList.add("st")
+        
+      } else {
+        N.classList.remove("st");
+        
+        
+      }
+
+    } 
+
+</script>
+</body>
+</html>

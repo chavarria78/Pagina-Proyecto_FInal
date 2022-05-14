@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Css/Estilos.css">
+	<title></title>
+</head>
+<style>
+
+	.header{
+		width: auto;
+		height: auto;
+	}
+
+	/* Header/logo Titulo */
+	.h {
+  padding: 90px;
+  height: 50px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+
+}
+
+	/* Aumenta el tamaño de fuente */
+	.h h1 {
+  font-size: 40px;
+}
+  #NavVert {
+
+  	height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+  }
+
+  #NavVert a  {
+  	background-color: #eee;
+  	color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    white-space: normal;
+
+
+  }
+
+#NavVert a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+  
+}
+
+
+
+.Buscar {
+    float: none;
+    display: block;
+    text-align: left;
+    width: auto;
+    padding: 6px;
+    padding-top: -10px;
+    border: 1px solid  #eee;
+    border-right: 10px;
+    margin: -22px 10px 0px 0px;
+
+}
+
+/*Plantilla de la pagina*/
+.contenedor {
+
+	 width: 100%; /*Para abarcar todo el ancho de la pantalla*/
+	 min-height: 100vh; /*Para abarcar todo lo alto de la pantalla*/
+	 margin: 0 auto; /* "Altura" "Anchura"*/
+	 display: grid;
+	 grid-template-columns: 200px auto; /* Tamaño (primera columna, segunda columna)*/
+	 grid-template-rows: 50px auto;
+	 grid-template-areas: "header header" /* Plantilla */
+	 					  "menu contenido"
+	 					  "footer footer"
+}
+
+.header {
+	grid-area: header;
+	
+}
+
+.st {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.s {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+}
+
+.MeLat {
+	grid-area: menu;
+	padding-top: 180px;
+	
+
+
+}
+
+.main{
+	grid-area: contenido;
+	padding-top: 190px;
+	padding-left: 50px;
+	height: 100px;
+	width: 70%;
+	
+}
+
+.main p {
+	font-size: 21px;
+}
+
+.main h1 {
+
+	padding-bottom: 10px;
+	padding-left: 350px;
+}
+
+.imagen {
+
+	width: 830px;
+    height: 250px;
+    object-fit: contain;
+	
+}
+
+
+
+</style>
+<body>
+
+
+	<!-- contiene todos los elementos de la pagina-->
+	<div class="contenedor">
+
+		<!-- Barra de navegacion -->
+		<header class="header">
+			<div class="h">
+		      <h1>Tutoriales</h1>
+			</div>
+			<div id="N">
+        		<a  href="../Inicio.html">Inicio</a>
+        		<a href="../Galeria.html">Galeria</a>
+        		<a href="../Tutorial">Tutoriales</a>
+        	</div>
+
+		</header>
+
+		<!-- Menu vertical a la izquierda -->
+	<nav class="MeLat">
+			<div id="NavVert">
+   				<input  class="Buscar" placeholder="Buscar..">
+   				<a href="../Tutoriales.html">Letra de Fuego</a>
+				<a href="portada.html">Fusion de imagenes</a>
+	    		<a href="color.html">Cambiar color de cabello</a>
+	    		<a href="marco.html">Marco glaseado tipo marconeo</a>
+	    		<a href="luz.html">Efecto de luz en texto</a>
+   				<a href="matrix.html">Efecto matrix</a>
+   				<a href="fondo.html">ELiminar fondo</a>
+   				<a href="impreso.html">Aspecto impreso</a>
+   				<a href="estampado.html">Estampado en ropa</a>
+   				<a href="ojo.html">Reflejo de imagen en ojo</a>
+   				<a href="full.html">Texto color full</a>
+   				<a href="avatar.html">Avatar con efecto cristal y marco semi-metalico</a>
+   				<a href="caja.html">Efecto caja</a>
+   			</div>
+  
+	</nav>
+
+
+		<!-- Contenido principal de la pagina -->
+		<main class="main">
+			
+			<h1>Fusion de Imagenes</h1><br>
+			<div> 
+				<p> 
+					Primero viene la tarea mas complicada. Esta es la selección
+					de las fotografías a utilizar. No siempre tenemos imágenes
+					posando para cualquier ocasión, por lo que nos podemos
+					ayudar con algún banco de imágenes para una de ellas.
+				</p> <br><br>
+
+				<div ><img src="../Imagenes/portada/1.png" class="imagen"></div> <br>			
+
+				<p> 
+					1. Abrir un documento de 10cm. x 15cm. (o el tamaño
+de fotografía que deseo según el portarretratos). El mismo
+deberá ser con fondo negro. Luego crear una nueva capa
+(Ctrl+J) y la llamo “original1". En ella coloco la imagen
+horizontal. Acto siguiente, repito el proceso de creación de
+capa, la llamo “original2" y coloco la imagen vertical.
+				</p> <br><br>
+
+				
+
+				<p>
+					2. Lo que hago a continuación es “Añadir una máscara
+vectorial” a la capa “original2". Como? Tal como se ve en la
+imagen siguiente:
+				</p><br><br>
+
+				<div ><img src="../Imagenes/portada/2.png" class="imagen"></div><br>
+
+				<p>
+					3. Lo que hago a continuación es seleccionar la
+herramienta de degradado. Una vez hecho esto, voy al panel
+de propiedades del degradado (ubicado en la parte
+superior) y selecciono un degradado lineal, el cual de la
+punta izquierda lleva negro al 100% de opacidad y del lado
+derecho, negro al 0% de opacidad. Ya teniendo lista la
+herramienta para utilizarla, trazo una línea de arriba hacia
+abajo sobre la capa “original2" como lo muestra la siguiente
+imagen (para tener una noción de ubicación de la fotografía
+que se encuentra debajo, podemos variar
+momentáneamente la opacidad de la capa “original2" a un
+50%)
+
+				</p><br><br>
+
+				<div ><img src="../Imagenes/portada/3.png" class="imagen"></div><br>
+
+				<p>
+					 Si volvemos a 100% de opacidad la capa “original2",
+obtendremos como resultado la fusión de las 2 imágenes
+
+				</p><br><br>
+
+				<div ><img src="../Imagenes/portada/4.png" class="imagen"></div><br>
+
+				<p>
+					4. Lo que haré ahora es darle un toque artístico a esta
+imagen. Para esto, me dirijo al menu superior, en Capas >
+Nueva Capa de Ajuste > Tono/Saturación. Me abre una
+ventana a la que le doy aceptar y luego aparece una nueva
+ventana en donde puedo ajustar los valores de tono,
+saturación y luminosidad sin afectar a las capas originales.
+Aquí mismo marco la casilla “Colorear” y puedo comenzar a
+jugar con los valores de tono y saturación (Luminosidad lo
+dejo como está).
+				</p><br><br>
+
+				<div ><img src="../Imagenes/portada/5.png" class="imagen"></div><br>
+
+
+				<div>
+
+		</main>
+		
+	</div>
+	<script>
+
+	window.onscroll = function() {myFunction()};
+
+	var N = document.getElementById("N");
+	var NavVert = document.getElementById("NavVert");
+	var st = N.offsetTop;
+	var s = NavVert.offsetTop;
+
+	function myFunction() {
+  		if (window.pageYOffset >= st) {
+    		N.classList.add("st")
+    		NavVert.classList.add("s")
+    		
+  		} else {
+    		N.classList.remove("st");
+    		NavVert.classList.remove("s");
+    		
+  		}
+
+
+  	}	
+
+</script>
+
+
+</body>
+</html>

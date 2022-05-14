@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../Css/Estilos.css">
+  <title>ELiminar Fondo</title>
+</head>
+<style>
+
+  .header{
+    width: auto;
+    height: auto;
+  }
+
+  /* Header/logo Titulo */
+  .h {
+  padding: 90px;
+  height: 50px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+
+}
+
+  /* Aumenta el tamaño de fuente */
+  .h h1 {
+  font-size: 40px;
+}
+  #NavVert {
+
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+  }
+
+  #NavVert a  {
+    background-color: #eee;
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    white-space: normal;
+
+
+  }
+
+#NavVert a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+  
+}
+
+
+
+.Buscar {
+    float: none;
+    display: block;
+    text-align: left;
+    width: auto;
+    padding: 6px;
+    padding-top: -10px;
+    border: 1px solid  #eee;
+    border-right: 10px;
+    margin: -22px 10px 0px 0px;
+
+}
+
+/*Plantilla de la pagina*/
+.contenedor {
+
+   width: 100%; /*Para abarcar todo el ancho de la pantalla*/
+   min-height: 100vh; /*Para abarcar todo lo alto de la pantalla*/
+   margin: 0 auto; /* "Altura" "Anchura"*/
+   display: grid;
+   grid-template-columns: 200px auto; /* Tamaño (primera columna, segunda columna)*/
+   grid-template-rows: 50px auto;
+   grid-template-areas: "header header" /* Plantilla */
+              "menu contenido"
+              "menu footer"
+}
+
+.header {
+  grid-area: header;
+  
+}
+
+.st {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.s {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+}
+
+.MeLat {
+  grid-area: menu;
+  padding-top: 180px;
+  
+
+
+}
+
+.main{
+  grid-area: contenido;
+  padding-top: 190px;
+  padding-left: 50px;
+  height: 100px;
+  width: 70%;
+  
+}
+
+.main p {
+  font-size: 21px;
+}
+
+.main h1 {
+
+  padding-bottom: 10px;
+  padding-left: 350px;
+}
+
+.imagen {
+
+  width: 830px;
+    height: 250px;
+    object-fit: contain;
+  
+}
+
+
+
+</style>
+<body>
+
+
+  <!-- contiene todos los elementos de la pagina-->
+  <div class="contenedor">
+
+    <!-- Barra de navegacion -->
+    <header class="header">
+      <div class="h">
+          <h1>Tutoriales</h1>
+      </div>
+      <div id="N">
+            <a  href="../Inicio.html">Inicio</a>
+            <a href="../Galeria.html">Galeria</a>
+            <a href="../Tutoriales.html">Tutoriales</a>
+          </div>
+
+    </header>
+
+    <!-- Menu vertical a la izquierda -->
+  <nav class="MeLat">
+      <div id="NavVert">
+          <input  class="Buscar" placeholder="Buscar..">
+          <a href="../Tutoriales.html">Letra de Fuego</a>
+        <a href="portada.html">Fusion de imagenes</a>
+          <a href="color.html">Cambiar color de cabello</a>
+          <a href="marco.html">Marco glaseado tipo marconeo</a>
+          <a href="luz.html">Efecto de luz en texto</a>
+          <a href="matrix.html">Efecto matrix</a>
+          <a href="fondo.html">ELiminar fondo</a>
+          <a href="impreso.html">Aspecto impreso</a>
+          <a href="estampado.html">Estampado en ropa</a>
+          <a href="ojo.html">Reflejo de imagen en ojo</a>
+          <a href="full.html">Texto color full</a>
+          <a href="avatar.html">Avatar con efecto cristal y marco semi-metalico</a>
+          <a href="caja.html">Efecto caja</a>
+        </div>
+  
+  </nav>
+
+
+    <!-- Contenido principal de la pagina -->
+    <main class="main">
+      
+      <h1> Recortar personas, eliminar el fondo. </h1><br>
+      <div> 
+
+        <div ><img src="../Imagenes/fondo/1.png" class="imagen"></div> <br>
+
+        <p> 
+          1. Abre la imagen que
+quieres recortar, y pulsa
+Control-j para duplicarla y
+poder volver al estado inicial
+en cualquier momento.
+
+        </p> <br><br>      
+
+        <p> 
+          2. En el menú superior, elige Filtro-
+->Extraer
+        </p> <br><br>
+
+        
+
+        <p>
+         3. Coge la herramienta
+Resaltador de Bordes y dibuja
+con ella el borde de la figura que
+quieres recortar. Ajusta el tamaño
+de la herramienta para que el
+trazo cubra suficientemente el borde.
+
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/fondo/2.png" class="imagen"></div> <br>
+
+        <p>
+        4. Coge la herramienta
+Relleno y haz click en el interior
+de la zona resaltada, para
+indicarle a Photoshop cuál es la
+zona que quieres conservar.
+Si se pinta de azul toda la
+fotografía, en lugar del interior,
+significa que el trazo verde no
+es continuo, tiene algún
+"agujero". Vuelve a hacer click
+con la herramienta relleno,
+para deshacerlo, y coge de
+nuevo el Resaltador de Bordes
+para tapar cualquier "agujero"
+del contorno verde resaltado.
+
+
+
+
+        </p><br><br>
+
+       <div ><img src="../Imagenes/fondo/3.png" class="imagen"></div> <br>
+
+        <p>
+         5. Haz click en el botón Ver y aparecerá el resultado de la
+extracción.
+El resultado no es perfecto,
+quedan restos del fondo que
+es necesario eliminar con la
+herramienta Limpiar
+Selecciona esta herramienta, y
+pásala sobre los restos del
+fondo que han quedado para
+borrarlos.
+Si borras accidentalmente
+alguna parte de la imagen que
+quieres conservar, pasa la
+herramienta con la tecla Alt pulsada para recuperar la parte
+borrada
+
+
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/fondo/4.png" class="imagen"></div> <br>
+
+        <p>
+        6. Una vez borrados los restos de
+fondo, puedes pasar la
+herramienta por todo el
+borde para que sea más
+definido, más duro.
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/fondo/5.png" class="imagen"></div> <br>
+
+
+        <div>
+
+          <p>
+       7. Por último, pulsa OK para salir
+del filtro extraer y obtener la
+imagen recortada
+        </p><br><br>
+
+         <p>
+       8. Para copiar la imagen
+recortada sobre otro fondo, pulsa
+Control-a para seleccionar toda
+la imagen, y después Control-c
+para copiarla.
+Abre la imagen que quieres como
+fondo (Archivo-->Abrir) y pulsa
+Control-v para pegar la imagen
+recortada.
+Puedes moverla para colocarla
+en el lugar adecuado con la
+herramienta Mover.
+        </p><br><br>
+
+       <div ><img src="../Imagenes/fondo/6.png" class="imagen"></div> <br>
+
+
+    </main>
+    
+    
+  </div>
+  <script>
+
+  window.onscroll = function() {myFunction()};
+
+  var N = document.getElementById("N");
+  var NavVert = document.getElementById("NavVert");
+
+  var st = N.offsetTop;
+  var s = NavVert.offsetTop;
+
+  function myFunction() {
+      if (window.pageYOffset >= st) {
+        N.classList.add("st")
+        NavVert.classList.add("s")
+        
+      } else {
+        N.classList.remove("st");
+        NavVert.classList.remove("s");
+        
+      }
+  } 
+
+</script>
+
+
+</body>
+</html>

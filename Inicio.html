@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Css/Estilos.css">
+
+<title>Proyeto Final</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/Titulo */
+.header {
+  padding: 90px;
+  height: 50px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Aumentar el tamaño de fuente del encabezado */
+.header h1 {
+  font-size: 40px;
+}
+
+/* container de la Columna */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+/* Crea dos columnas desiguales que se encuentren una al lado de la otra */
+/* Sidebar/columna izquierda */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.st {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.imagen {
+  width: 830px;
+  height: 250px;
+
+}
+
+
+/* Footer */
+.footer {
+  padding: 15px;
+  text-align: center;
+  background: white;
+  overflow: hidden;
+}
+
+.footer p {
+    margin: 0;
+  }
+  
+
+
+/* Diseño responsive cuando la pantalla tiene menos de 700 px de ancho, haga que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Diseño responsive - cuando la pantalla tiene menos de 400 px de ancho, haga que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Proyecto Final "Programacion Web"</h1>
+</div>
+
+<div id="N">
+   <a  href="#">Inicio</a>
+   <a href="Galeria.html">Galeria</a>
+   <a href="Tutoriales.html">Tutoriales</a>
+ </div>
+
+<div class="row">
+  <div class="side">
+    <h2>Acerca de mi</h2>
+
+    <div  style="height:200px;"> </div>
+    <p>Este proyecto fue realizado con el proposito de ayudar a estudiantes a comprender la parte mas basica sobre desarrollo web, ademas de
+    brindarles un sencillo tutorial basico de Photoshop.</p><br><br>
+    <h3></h3>
+    <p></p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>Adobe Photoshop</h2>
+    <div>      
+      <image src="Inicio/ps.jpg" alt="PHOTOSHOP" class="imagen">
+    </div>
+    
+    <p>Adobe Photoshop es un editor de fotografías desarrollado por Adobe Systems Incorporated. Usado principalmente para el retoque de fotografías y gráficos, su nombre en español significa "taller de fotos". Fue creado en 1986 por los hermanos Thomas Knoll y John Knoll, desde entonces se ha convertido en una marca de uso común.</p>
+    <br>
+    
+    <div>
+     <image src="Inicio/s.jpg" alt="PHOTOSHOP" class="imagen">
+    </div><br>    
+    <p>En este proyencto encontraras diferentes tipos de diseños, cada uno con una explicacion paso a paso muy facil de entender.</p>
+  </div>
+</div>
+
+<div class="footer">
+  
+  <p>&copy; 2021 Brandom Chavarria</p>
+
+</div>
+<script>
+
+  window.onscroll = function() {myFunction()};
+
+  var N = document.getElementById("N");
+  var st = N.offsetTop;
+  
+
+  function myFunction() {
+      if (window.pageYOffset >= st) {
+        N.classList.add("st")
+       
+        
+      } else {
+        N.classList.remove("st");
+        
+      }
+
+
+    } 
+
+</script>
+
+</body>
+</html>

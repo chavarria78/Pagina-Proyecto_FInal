@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../Css/Estilos.css">
+  <title>Avatar</title>
+</head>
+<style>
+
+  .header{
+    width: auto;
+    height: auto;
+  }
+
+  /* Header/logo Titulo */
+  .h {
+  padding: 90px;
+  height: 50px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+
+}
+
+  /* Aumenta el tamaño de fuente */
+  .h h1 {
+  font-size: 40px;
+}
+  #NavVert {
+
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+  }
+
+  #NavVert a  {
+    background-color: #eee;
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    white-space: normal;
+
+
+  }
+
+#NavVert a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+  
+}
+
+
+
+.Buscar {
+    float: none;
+    display: block;
+    text-align: left;
+    width: auto;
+    padding: 6px;
+    padding-top: -10px;
+    border: 1px solid  #eee;
+    border-right: 10px;
+    margin: -22px 10px 0px 0px;
+
+}
+
+/*Plantilla de la pagina*/
+.contenedor {
+
+   width: 100%; /*Para abarcar todo el ancho de la pantalla*/
+   min-height: 100vh; /*Para abarcar todo lo alto de la pantalla*/
+   margin: 0 auto; /* "Altura" "Anchura"*/
+   display: grid;
+   grid-template-columns: 200px auto; /* Tamaño (primera columna, segunda columna)*/
+   grid-template-rows: 50px auto;
+   grid-template-areas: "header header" /* Plantilla */
+              "menu contenido"
+              "menu footer"
+}
+
+.header {
+  grid-area: header;
+  
+}
+
+.st {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.s {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+}
+
+.MeLat {
+  grid-area: menu;
+  padding-top: 180px;
+  
+
+
+}
+
+.main{
+  grid-area: contenido;
+  padding-top: 190px;
+  padding-left: 50px;
+  height: 100px;
+  width: 70%;
+  
+}
+
+.main p {
+  font-size: 21px;
+}
+
+.main h1 {
+
+  padding-bottom: 10px;
+  padding-left: 350px;
+}
+
+.imagen {
+
+  width: 830px;
+    height: 250px;
+    object-fit: contain;
+  
+}
+
+
+
+</style>
+<body>
+
+
+  <!-- contiene todos los elementos de la pagina-->
+  <div class="contenedor">
+
+    <!-- Barra de navegacion -->
+    <header class="header">
+      <div class="h">
+          <h1>Tutoriales</h1>
+      </div>
+      <div id="N">
+            <a  href="../Inicio.html">Inicio</a>
+            <a href="../Galeria.html">Galeria</a>
+            <a href="../Tutoriales.html">Tutoriales</a>
+          </div>
+
+    </header>
+
+    <!-- Menu vertical a la izquierda -->
+  <nav class="MeLat">
+      <div id="NavVert">
+          <input  class="Buscar" placeholder="Buscar..">
+          <a href="../Tutoriales.html">Letra de Fuego</a>
+        <a href="portada.html">Fusion de imagenes</a>
+          <a href="color.html">Cambiar color de cabello</a>
+          <a href="marco.html">Marco glaseado tipo marconeo</a>
+          <a href="luz.html">Efecto de luz en texto</a>
+          <a href="matrix.html">Efecto matrix</a>
+          <a href="fondo.html">ELiminar fondo</a>
+          <a href="impreso.html">Aspecto impreso</a>
+          <a href="estampado.html">Estampado en ropa</a>
+          <a href="ojo.html">Reflejo de imagen en ojo</a>
+          <a href="full.html">Texto color full</a>
+          <a href="avatar.html">Avatar con efecto cristal y marco semi-metalico</a>
+          <a href="caja.html">Efecto caja</a>
+          <a href="reflejo.html">Efecto Reflejo</a>
+          <a href="recorte.html">Seleccion y recorte</a>
+          <a href="oro.html">Letra de oro</a>
+          <a href="hielo.html">Letra de hielo</a>
+          <a href="pelicula.html">Efecto rollo de pelicula</a>
+        </div>
+  
+  </nav>
+
+
+    <!-- Contenido principal de la pagina -->
+    <main class="main">
+      
+      <h1> Avatar con efecto cristal y marco semi-metalico </h1><br>
+      <div>       
+        <p> 
+        1. Lo primero que hacemos es Abrir un documento de
+Transparente150 x 150 Px, Luego usamos la herramienta
+marco eliptico, y presionando Shitf trazamos un Círculo.
+        </p> <br><br>
+
+        <p>
+         2.Luego vamos a Edición / Rellenar, seleccionamos Color,
+como muestra en la imagen
+
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf3.png" class="imagen"></div><br>
+
+        <p>
+        3. Colocamos el color c6c6c6, luego que quede de color gris el
+Círculo, Trazamos un nuevo círculo presionando Shift también,
+tienes que tratar que quede totalmente alineado por todo
+lados con el anterior
+
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf4.png" class="imagen"></div><br>
+
+        <p>
+        4. Luego de eso presionamos Supr, queda así:
+
+
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf5.png" class="imagen"></div><br>
+
+        <p>
+       5. Luego de eso presionamos Supr, queda así:
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf6.png" class="imagen"></div><br>
+        <div ><img src="../Imagenes/textof/tf7.png" class="imagen"></div><br><br>
+
+
+        <div>
+
+          <p>
+      6. Esto hace que quede seleccionado el Trabajo que llevamos
+hecho
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf6.png" class="imagen"></div><br>
+        <div ><img src="../Imagenes/textof/tf7.png" class="imagen"></div><br><br>
+
+         <p>
+     7. Sin mover nada vamos a Selección / Modificar / Contraer, y le
+damos contraer 2 px, ahora creamos una nueva capa sin
+Eliminar la selección.
+Ahora vamos a Edición / rellenar, y le colocamos color
+949494.
+Queda así
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf6.png" class="imagen"></div><br>
+        <div ><img src="../Imagenes/textof/tf7.png" class="imagen"></div><br><br>
+         <p>
+     8. Ahora vamos a: Filtro / desenfocar / Desenfoque gaussiano, y
+colocamos un radio de 3 px
+Hasta los momentos el trabajo está así
+</p><br>
+<div ><img src="../Imagenes/textof/tf6.png" class="imagen"></div><br>
+        <div ><img src="../Imagenes/textof/tf7.png" class="imagen"></div><br><br>
+
+		<p>
+      9. Ahora vamos a opciones de fusión. Y colocamos satinado:
+
+        </p><br><br>
+
+        <div ><img src="../Imagenes/textof/tf6.png" class="imagen"></div><br>
+        <div ><img src="../Imagenes/textof/tf7.png" class="imagen"></div><br><br>
+
+        <p>
+     	Por ahora tenemos el marco listo.
+
+        </p><br><br>
+
+        <p>
+     10. Luego hacemos una nueva capa, y nos vamos a Imagen /
+Aplicar Imagen.
+Ahora colocaremos el fondo, solo arastra una imagen hasta
+el trabajo que estamos haciendo, pero la capa dede quedar
+debajo de los demás:
+
+        </p><br><br>
+        <p>
+     11. Hacemos una selección Circular en lo que quedará de fondo:
+
+        </p><br><br>
+        <p>
+     12. Sin mover mas nada presionamos ctrl + J, así hemos
+multiplicado lo seleccionado, en la ventana de capas se ve
+así:
+
+        </p><br><br>
+        <p>
+     13. Lo que hay que hacer es eliminar la capa 8
+
+        </p><br><br>
+        <p>
+     14. Hacemos una nueva capa sobre el trabajo, hacemos una
+selección rectangular
+
+        </p><br><br>
+        <p>
+     15. Rellenamos la selección de color negro, y presionamos ctrl +
+G, y cambiamos el estilo de capa a Luz Suave.
+Queda algo así:
+
+        </p><br><br>
+        <p>
+     16. Ahora le haremos un Estilo de Cristal, haciendo una nueva
+capa, y trazamos un Ovalo:
+
+        </p><br><br>
+        <p>
+     17. Ahora usaremos la herramienta de degradado, pero tienes
+configurar para que quede así
+
+        </p><br><br>
+        <p>
+     18. Trazamos de arriba hacia abajo en el Ovalo:
+
+
+        </p><br><br>
+        <p>
+     19. Ahora le cambiamos la opacidad a 70 a el Ovalo.
+
+
+        </p><br><br>
+        <p>
+     20. Solo le colocamos el texto, y puedes seguir haciéndole lo que
+quieras, ya que tienes que dejar correr tu imaginación, Este es Mi resultado:
+
+        </p><br><br>
+
+
+    
+    
+  </div>
+  <script>
+
+  window.onscroll = function() {myFunction()};
+
+  var N = document.getElementById("N");
+  var NavVert = document.getElementById("NavVert");
+
+  var st = N.offsetTop;
+  var s = NavVert.offsetTop;
+
+  function myFunction() {
+      if (window.pageYOffset >= st) {
+        N.classList.add("st")
+        NavVert.classList.add("s")
+        
+      } else {
+        N.classList.remove("st");
+        NavVert.classList.remove("s");
+        
+      }
+  } 
+
+</script>
+
+
+</body>
+</html>
